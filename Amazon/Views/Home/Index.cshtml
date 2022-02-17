@@ -1,0 +1,34 @@
+﻿@{
+}
+
+@model BooksViewModel
+
+<h1>Amazon Books</h1>
+
+@foreach (Book p in Model.Books)
+{
+
+    <div class="card card-outline-primary m-1 p-1">
+        <div class="bg-faded p-1">
+            <h4>@p.Title</h4>
+        </div>
+        <div class="card-text p-1">
+            <ul>
+                <li>Author: @p.Author</li>
+                <li>Publisher: @p.Publisher</li>
+                <li>ISBN: @p.Isbn</li>
+                <li>Classification: @p.Classification</li>
+                <li>Category: @p.Category</li>
+                <li>PageCount: @p.PageCount pages</li>
+                <li>Price: $ @p.Price</li>
+            </ul>
+        </div>
+    </div>
+
+    <br />
+}
+
+
+<div page-blah="@Model.PageInfo" page-action="Index"></div>
+
+@* I added Bootstrap on this page that I learned from the text book *@
