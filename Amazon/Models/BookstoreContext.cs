@@ -20,6 +20,6 @@ namespace Amazon.Models
         }
 
         public DbSet<Book> Books { get; set; }
-
+        public DbSet<CheckingOut> CheckingOut { get; set; }
     }
 }

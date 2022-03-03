@@ -74,3 +74,9 @@ C:\Users\dchin\OneDrive\Documents\GitHub\Amazon\Amazon\obj\Debug\netcoreapp3.1\A
 C:\Users\dchin\OneDrive\Documents\GitHub\Amazon\Amazon\obj\Debug\netcoreapp3.1\Amazon.dll
 C:\Users\dchin\OneDrive\Documents\GitHub\Amazon\Amazon\obj\Debug\netcoreapp3.1\Amazon.pdb
 C:\Users\dchin\OneDrive\Documents\GitHub\Amazon\Amazon\obj\Debug\netcoreapp3.1\Amazon.genruntimeconfig.cache
+C:\Users\dchin\OneDrive\Documents\GitHub\Amazon\Amazon\obj\Debug\netcoreapp3.1\Razor\Pages\CheckOut.cshtml.g.cs
+C:\Users\dchin\OneDrive\Documents\GitHub\Amazon\Amazon\obj\Debug\netcoreapp3.1\Razor\Pages\_CheckOutLayout.cshtml.g.cs
+C:\Users\dchin\OneDrive\Documents\GitHub\Amazon\Amazon\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\dchin\OneDrive\Documents\GitHub\Amazon\Amazon\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\dchin\OneDrive\Documents\GitHub\Amazon\Amazon\obj\Debug\netcoreapp3.1\Razor\Views\Shared\BookSummary.cshtml.g.cs
+C:\Users\dchin\OneDrive\Documents\GitHub\Amazon\Amazon\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Components\Types\Default.cshtml.g.cs
