@@ -1,0 +1,55 @@
+﻿<table class="table table-sm table-striped table-bordered">
+
+    <thead>
+        <tr>
+            <th colspan="5" class="text-center">@TableTitle</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        @if (CheckOuts?.Count() > 0)
+        {
+            @foreach (CheckingOut d in CheckOuts)
+            {
+                <tr>
+                    <td>@d.Name</td>
+                    <td>@d.Zip</td>
+                    <th>Book</th>
+                    <th>Quantity</th>
+                </tr>
+
+                @foreach (BasketLineItem bli in d.Lines)
+                {
+                    <tr>
+                        <td colspan="2"></td>
+                        <td>@bli.Book.Title</td>
+                        <td>@bli.Quantity</td>
+                    </tr>
+                }
+            }
+        }
+        else
+        {
+            <tr>
+                <td colspan="5" class="text-center">No Orders</td>
+            </tr>
+        }
+    </tbody>
+
+</table>
+
+@code {
+
+    [Parameter]
+    public string TableTitle { get; set; } = "CheckOut";
+
+    [Parameter]
+    public IEnumerable<CheckingOut> CheckOuts { get; set; }
+
+    [Parameter]
+    public string ButtonLabel { get; set; } = "CheckedOut";
+
+    [Parameter]
+    public EventCallback<int> CheckOutSelected { get; set; }
+
+}

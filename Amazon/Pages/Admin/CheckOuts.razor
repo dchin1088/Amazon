@@ -1,0 +1,25 @@
+﻿@page "/admin/CheckOuts"
+@inherits OwningComponentBase<ICheckingOutRepository>
+
+<CheckOutTable TableTitle="Uncollected Checkouts" CheckOuts="UncollectedCheckouts"></CheckOutTable>
+
+@code {
+
+    public ICheckingOutRepository repo => Service;
+
+    public IEnumerable<CheckingOut> AllCheckouts { get; set; }
+    public IEnumerable<CheckingOut> UncollectedCheckouts { get; set; }
+    public IEnumerable<CheckingOut> CollectedCheckouts { get; set; }
+
+    protected async override Task OnInitializedAsync()
+    {
+        await UpdateData();
+    }
+
+    public async Task UpdateData()
+    {
+        AllCheckouts = await repo.CheckingOuts.ToListAsync();
+        UncollectedCheckouts = AllCheckouts.Where(x => !x.CheckOutReceived);
+
+    }
+}
